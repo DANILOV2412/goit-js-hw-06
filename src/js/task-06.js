@@ -2,11 +2,11 @@ const inputEl = document.querySelector('#validation-input');
 const lengthMin = inputEl.getAttribute('data-length');
 
 inputEl.addEventListener('blur', event => {
-    const velue = event.currentTarget.value.length;
-  console.log(velue);
-  console.log(`${velue}` === lengthMin);
+    const val = event.currentTarget.value.length;
+  console.log(val);
+  console.log(`${val}` === lengthMin);
 
-  if (`${velue}` !== lengthMin) {
+  if (`${val}` !== lengthMin) {
     inputEl.classList.add('invalid');
     inputEl.classList.replace('valid', 'invalid');
     console.log(inputEl);
